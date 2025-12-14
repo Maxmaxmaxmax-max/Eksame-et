@@ -1,119 +1,9 @@
 <!DOCTYPE html>
 <html lang="da">
 <head>
-    <meta charset="UTF-8">$1
-    <style>
-        :root {
-            --zealand-yellow: #fff28a;
-            --zealand-black: #1f1f1f;
-            --zealand-gray: #f6f6f6;
-            --zealand-border: #e2e2e2;
-            --font-base: "Inter", "Arial", sans-serif;
-        }
-
-        * { box-sizing: border-box; }
-
-        body {
-            margin: 0;
-            font-family: var(--font-base);
-            color: var(--zealand-black);
-            background-color: #ffffff;
-            line-height: 1.6;
-        }
-
-        header {
-            background-color: var(--zealand-yellow);
-            padding: 1.25rem 1.5rem;
-            border-bottom: 1px solid var(--zealand-border);
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 1.4rem;
-            font-weight: 700;
-        }
-
-        nav {
-            margin-top: 0.75rem;
-            display: flex;
-            gap: 1.5rem;
-            flex-wrap: wrap;
-        }
-
-        nav a {
-            text-decoration: none;
-            color: var(--zealand-black);
-            font-weight: 600;
-        }
-
-        nav a:hover,
-        nav a:focus {
-            text-decoration: underline;
-        }
-
-        main {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 2rem 1.5rem;
-            display: flex;
-            flex-direction: column;
-            gap: 2rem;
-        }
-
-        section {
-            background-color: var(--zealand-gray);
-            padding: 2rem;
-            border-radius: 10px;
-        }
-
-        section h2 {
-            margin-top: 0;
-            font-size: 1.25rem;
-        }
-
-        .cards {
-            max-width: 1200px;
-            margin: 0 auto 3rem;
-            padding: 0 1.5rem;
-            display: flex;
-            flex-direction: column;
-            gap: 1.5rem;
-        }
-
-        article {
-            background-color: #ffffff;
-            border: 1px solid var(--zealand-border);
-            border-radius: 12px;
-            padding: 1.5rem;
-        }
-
-        footer {
-            text-align: center;
-            padding: 2rem 1rem;
-            font-size: 0.9rem;
-            color: #555555;
-            border-top: 1px solid var(--zealand-border);
-        }
-
-        @media (min-width: 768px) {
-            header {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-            }
-
-            nav { margin-top: 0; }
-
-            main {
-                flex-direction: row;
-                align-items: flex-start;
-            }
-
-            main > section { flex: 3; }
-            aside { flex: 1; }
-            .cards { flex-direction: row; }
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nyt liv til iværksætterkulturen</title>
 </head>
 <body>
 
@@ -121,62 +11,51 @@
     <h1>Nyt liv til iværksætterkulturen</h1>
     <nav aria-label="Undernavigation">
         <a href="index.html">Forside</a>
-        <a href="miljoer.html">Iværksættermiljøer</a>
+        <a href="partnere.html">Partnere</a>
     </nav>
 </header>
 
 <main>
-    <section>
+    <section class="intro">
         <h2>Iværksættermiljøer i Region Sjælland</h2>
         <p>
-            De tre iværksættermiljøer bliver fysisk forankret på Zealands afdelinger og
-            giver nyt liv til iværksætterkulturen i Region Sjælland.
+            De tre iværksættermiljøer er fysisk forankret på Zealands afdelinger og
+            skaber nye muligheder for unge iværksættere.
         </p>
     </section>
 
-    <section>
-        <h2>Slagelse</h2>
-        <p>
-            I Slagelse ombygges en hel etage til et åbent iværksættercenter i regi af
-            <strong>Zealand Connect</strong> – et center for innovation og relationer,
-            hvor studerende og unge iværksættere kan udvikle deres idéer i stærke
-            fællesskaber.
-        </p>
+    <section class="cards">
+        <article>
+            <h3>Slagelse</h3>
+            <p>
+                En hel etage ombygges til åbent iværksættercenter i regi af
+                <strong>Zealand Connect</strong> – et center for innovation og relationer.
+            </p>
+        </article>
+
+        <article>
+            <h3>Køge</h3>
+            <p>
+                Digital Innovationslab med fokus på digitale startups, AI,
+                velfærdsteknologi og digital produktudvikling i tæt samarbejde med
+                erhvervslivet.
+            </p>
+        </article>
+
+        <article>
+            <h3>Næstved</h3>
+            <p>
+                Iværksætterhub med fokus på bæredygtighed, designtænkning og lokale
+                partnerskaber – blandt andet gennem Torsdagssaloner.
+            </p>
+        </article>
     </section>
 
-    <section>
-        <h2>Køge</h2>
-        <p>
-            I Køge udvider Zealand de eksisterende labs med et nyt
-            <strong>Digital Innovationslab (DI)</strong>. Her er fokus på digitale
-            startups, digital produktudvikling, AI og velfærdsteknologi.
-            DI-labbet udvikles og drives i tæt samarbejde med lokale og regionale
-            virksomheder samt organisationer som Digital Lead, Simple Agency og
-            Connect Køge.
-        </p>
-    </section>
-
-    <section>
-        <h2>Næstved</h2>
-        <p>
-            I Næstved kobles bæredygtighed og designtænkning med stærke lokale
-            partnerskaber. Organisationer som Ressource City, Næstved Erhverv,
-            Novenco, Talentskolen, Næstved Gymnasium, Nordinvent, Næstved
-            Demokratifestival og Absalon bidrager til miljøet.
-        </p>
-        <p>
-            Partnerskaberne aktiveres blandt andet gennem <strong>Torsdagssaloner</strong>
-            – et ugentligt mødested i iværksætterhubben i Næstved.
-        </p>
-    </section>
-
-    <section>
+    <section class="highlight">
         <h2>Mere end fysiske rammer</h2>
         <p>
-            Iværksættermiljøerne er ikke kun steder at sidde, men dynamiske
-            fællesskaber med coachingforløb, workshops, netværk med virksomheder
-            og adgang til faglige eksperter, der understøtter de unges
-            iværksætterrejse.
+            Miljøerne er dynamiske fællesskaber med coaching, workshops,
+            virksomhedsnetværk og adgang til faglige eksperter.
         </p>
     </section>
 </main>

@@ -1,120 +1,9 @@
 <!DOCTYPE html>
 <html lang="da">
 <head>
-    <meta charset="UTF-8">$1
-    <style>
-
-        :root {
-            --zealand-yellow: #fff28a;
-            --zealand-black: #1f1f1f;
-            --zealand-gray: #f6f6f6;
-            --zealand-border: #e2e2e2;
-            --font-base: "Inter", "Arial", sans-serif;
-        }
-
-        * { box-sizing: border-box; }
-
-        body {
-            margin: 0;
-            font-family: var(--font-base);
-            color: var(--zealand-black);
-            background-color: #ffffff;
-            line-height: 1.6;
-        }
-
-        header {
-            background-color: var(--zealand-yellow);
-            padding: 1.25rem 1.5rem;
-            border-bottom: 1px solid var(--zealand-border);
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 1.4rem;
-            font-weight: 700;
-        }
-
-        nav {
-            margin-top: 0.75rem;
-            display: flex;
-            gap: 1.5rem;
-            flex-wrap: wrap;
-        }
-
-        nav a {
-            text-decoration: none;
-            color: var(--zealand-black);
-            font-weight: 600;
-        }
-
-        nav a:hover,
-        nav a:focus {
-            text-decoration: underline;
-        }
-
-        main {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 2rem 1.5rem;
-            display: flex;
-            flex-direction: column;
-            gap: 2rem;
-        }
-
-        section {
-            background-color: var(--zealand-gray);
-            padding: 2rem;
-            border-radius: 10px;
-        }
-
-        section h2 {
-            margin-top: 0;
-            font-size: 1.25rem;
-        }
-
-        .cards {
-            max-width: 1200px;
-            margin: 0 auto 3rem;
-            padding: 0 1.5rem;
-            display: flex;
-            flex-direction: column;
-            gap: 1.5rem;
-        }
-
-        article {
-            background-color: #ffffff;
-            border: 1px solid var(--zealand-border);
-            border-radius: 12px;
-            padding: 1.5rem;
-        }
-
-        footer {
-            text-align: center;
-            padding: 2rem 1rem;
-            font-size: 0.9rem;
-            color: #555555;
-            border-top: 1px solid var(--zealand-border);
-        }
-
-        @media (min-width: 768px) {
-            header {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-            }
-
-            nav { margin-top: 0; }
-
-            main {
-                flex-direction: row;
-                align-items: flex-start;
-            }
-
-            main > section { flex: 3; }
-            aside { flex: 1; }
-            .cards { flex-direction: row; }
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vi går i gang nu – sammen med vores partnere</title>
 </head>
 <body>
 
@@ -126,22 +15,18 @@
     </nav>
 </header>
 
-<main>
-    <section>
+<main class="content-split">
+    <section class="highlight">
         <h2>Samarbejde som fundament</h2>
         <p>
-            Zealand ser frem til at realisere projektet <strong>Connected Starters</strong>
-            i tæt samarbejde med en bred kreds af eksterne partnere. Samarbejdet sikrer
-            stærk lokal og regional forankring og giver de unge adgang til viden,
-            netværk og virkelighedsnære erfaringer.
+            Zealand realiserer projektet <strong>Connected Starters</strong> i tæt
+            samarbejde med stærke lokale og regionale partnere. Samarbejdet skaber
+            relevans, forankring og adgang til vigtige netværk for de unge.
         </p>
     </section>
 
     <section>
         <h2>Centrale samarbejdspartnere</h2>
-        <p>
-            Projektet gennemføres i samarbejde med blandt andre:
-        </p>
         <ul>
             <li>Slagelse Kommune</li>
             <li>Erhvervshus Sjælland</li>
@@ -152,13 +37,11 @@
         </ul>
     </section>
 
-    <section>
+    <section class="highlight">
         <h2>Invitation til fælles udvikling</h2>
         <p>
-            Zealand inviterer både eksisterende og nye partnere til at deltage aktivt
-            i projektet. Gennem fælles initiativer, videndeling og netværk skabes
-            de bedste forudsætninger for at styrke iværksætterkulturen i Region
-            Sjælland.
+            Zealand inviterer både eksisterende og nye partnere til aktiv deltagelse.
+            Gennem fælles initiativer styrkes iværksætterkulturen i Region Sjælland.
         </p>
     </section>
 </main>
