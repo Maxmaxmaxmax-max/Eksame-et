@@ -4,19 +4,111 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nyt liv til iværksætterkulturen</title>
+
+    <style>
+        :root {
+            --zealand-yellow: #fff28a;
+            --zealand-black: #1f1f1f;
+            --zealand-gray: #f6f6f6;
+            --zealand-border: #e2e2e2;
+            --font-base: "Inter", Arial, sans-serif;
+        }
+
+        * { box-sizing: border-box; }
+
+        body {
+            margin: 0;
+            font-family: var(--font-base);
+            color: var(--zealand-black);
+            line-height: 1.6;
+        }
+
+        header {
+            background: var(--zealand-yellow);
+            padding: 1.5rem;
+            border-bottom: 1px solid var(--zealand-border);
+        }
+
+        nav {
+            margin-top: 0.5rem;
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--zealand-black);
+            font-weight: 600;
+        }
+
+        main {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        section {
+            background: var(--zealand-gray);
+            padding: 2rem;
+            border-radius: 12px;
+        }
+
+        .cards {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        article {
+            background: #ffffff;
+            border: 1px solid var(--zealand-border);
+            padding: 1.5rem;
+            border-radius: 12px;
+        }
+
+        .highlight {
+            background: #ffffff;
+            border-left: 6px solid var(--zealand-yellow);
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            font-size: 0.9rem;
+            border-top: 1px solid var(--zealand-border);
+            color: #555;
+        }
+
+        @media (min-width: 768px) {
+            header {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .cards {
+                flex-direction: row;
+            }
+        }
+    </style>
 </head>
+
 <body>
 
 <header>
     <h1>Nyt liv til iværksætterkulturen</h1>
-    <nav aria-label="Undernavigation">
+    <nav>
         <a href="index.html">Forside</a>
         <a href="partnere.html">Partnere</a>
     </nav>
 </header>
 
 <main>
-    <section class="intro">
+    <section>
         <h2>Iværksættermiljøer i Region Sjælland</h2>
         <p>
             De tre iværksættermiljøer er fysisk forankret på Zealands afdelinger og
@@ -29,24 +121,23 @@
             <h3>Slagelse</h3>
             <p>
                 En hel etage ombygges til åbent iværksættercenter i regi af
-                <strong>Zealand Connect</strong> – et center for innovation og relationer.
+                <strong>Zealand Connect</strong>.
             </p>
         </article>
 
         <article>
             <h3>Køge</h3>
             <p>
-                Digital Innovationslab med fokus på digitale startups, AI,
-                velfærdsteknologi og digital produktudvikling i tæt samarbejde med
-                erhvervslivet.
+                Digital Innovationslab med fokus på digitale startups, AI og
+                velfærdsteknologi i tæt samarbejde med erhvervslivet.
             </p>
         </article>
 
         <article>
             <h3>Næstved</h3>
             <p>
-                Iværksætterhub med fokus på bæredygtighed, designtænkning og lokale
-                partnerskaber – blandt andet gennem Torsdagssaloner.
+                Iværksætterhub med fokus på bæredygtighed, design og lokale partnerskaber
+                – blandt andet gennem Torsdagssaloner.
             </p>
         </article>
     </section>

@@ -4,24 +4,102 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vi går i gang nu – sammen med vores partnere</title>
+
+    <style>
+        :root {
+            --zealand-yellow: #fff28a;
+            --zealand-black: #1f1f1f;
+            --zealand-gray: #f6f6f6;
+            --zealand-border: #e2e2e2;
+            --font-base: "Inter", Arial, sans-serif;
+        }
+
+        * { box-sizing: border-box; }
+
+        body {
+            margin: 0;
+            font-family: var(--font-base);
+            color: var(--zealand-black);
+            line-height: 1.6;
+        }
+
+        header {
+            background: var(--zealand-yellow);
+            padding: 1.5rem;
+            border-bottom: 1px solid var(--zealand-border);
+        }
+
+        nav {
+            margin-top: 0.5rem;
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--zealand-black);
+            font-weight: 600;
+        }
+
+        main {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        section {
+            background: var(--zealand-gray);
+            padding: 2rem;
+            border-radius: 12px;
+        }
+
+        .highlight {
+            background: #ffffff;
+            border-left: 6px solid var(--zealand-yellow);
+        }
+
+        ul {
+            padding-left: 1.2rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            font-size: 0.9rem;
+            border-top: 1px solid var(--zealand-border);
+            color: #555;
+        }
+
+        @media (min-width: 768px) {
+            header {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+        }
+    </style>
 </head>
+
 <body>
 
 <header>
     <h1>Vi går i gang nu</h1>
-    <nav aria-label="Undernavigation">
+    <nav>
         <a href="index.html">Forside</a>
         <a href="miljoe-liv.html">Iværksættermiljøer</a>
     </nav>
 </header>
 
-<main class="content-split">
+<main>
     <section class="highlight">
         <h2>Samarbejde som fundament</h2>
         <p>
-            Zealand realiserer projektet <strong>Connected Starters</strong> i tæt
-            samarbejde med stærke lokale og regionale partnere. Samarbejdet skaber
-            relevans, forankring og adgang til vigtige netværk for de unge.
+            Zealand ser frem til at realisere projektet <strong>Connected Starters</strong>
+            i tæt samarbejde med stærke lokale og regionale partnere.
         </p>
     </section>
 
@@ -40,8 +118,8 @@
     <section class="highlight">
         <h2>Invitation til fælles udvikling</h2>
         <p>
-            Zealand inviterer både eksisterende og nye partnere til aktiv deltagelse.
-            Gennem fælles initiativer styrkes iværksætterkulturen i Region Sjælland.
+            Zealand inviterer både eksisterende og nye partnere til at deltage aktivt
+            i udviklingen af iværksætterkulturen i Region Sjælland.
         </p>
     </section>
 </main>
