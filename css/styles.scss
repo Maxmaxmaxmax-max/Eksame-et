@@ -18,3 +18,149 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 @import "bootstrapComponents";
 
 // 5. Du kan lave styling her...
+/* =========================
+   ZEALAND CONNECTED STARTERS
+   Mobile first – Flexbox
+   ========================= */
+
+:root {
+  --zealand-yellow: #FFF28A;
+  --zealand-black: #1F1F1F;
+  --zealand-gray: #F6F6F6;
+  --zealand-border: #E2E2E2;
+  --zealand-muted: #555555;
+  --font-base: "Inter", Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-base);
+  color: var(--zealand-black);
+  background: #ffffff;
+  line-height: 1.6;
+}
+
+/* ===== Header / Navigation ===== */
+
+.site-header {
+  background: var(--zealand-yellow);
+  padding: 1.5rem;
+  border-bottom: 1px solid var(--zealand-border);
+}
+
+.site-nav {
+  margin-top: 0.5rem;
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.site-nav a {
+  text-decoration: none;
+  color: var(--zealand-black);
+  font-weight: 600;
+}
+
+/* ===== Layout ===== */
+
+.page-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* ===== Sections ===== */
+
+.section {
+  background: var(--zealand-gray);
+  padding: 2rem;
+  border-radius: 12px;
+}
+
+.section--highlight {
+  background: #ffffff;
+  border-left: 6px solid var(--zealand-yellow);
+}
+
+/* ===== Cards ===== */
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.card {
+  background: #ffffff;
+  border: 1px solid var(--zealand-border);
+  padding: 1.5rem;
+  border-radius: 12px;
+}
+
+/* ===== Footer ===== */
+
+.site-footer {
+  text-align: center;
+  padding: 2rem;
+  font-size: 0.9rem;
+  color: var(--zealand-muted);
+  border-top: 1px solid var(--zealand-border);
+}
+
+/* ===== Desktop ===== */
+
+@media (min-width: 768px) {
+  .site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .cards {
+    flex-direction: row;
+  }
+}
+/* ===== Navigation – alignment & typography ===== */
+
+.navbar-nav {
+  margin-left: auto; /* rykker menuen til højre */
+}
+
+.navbar-brand {
+  font-family: var(--font-base);
+  color: var(--zealand-black);
+}
+
+.navbar-brand:hover {
+  color: var(--zealand-black);
+}
+
+.navbar-nav .nav-link {
+  font-family: var(--font-base);
+  color: var(--zealand-black);
+  font-weight: 600;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.navbar-nav .nav-link:not(:last-child) {
+  margin-right: 2rem; /* luft mellem links (gestalt/whitespace) */
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus {
+  color: var(--zealand-black);
+  text-decoration: underline;
+}
+
+/* Fjern Bootstrap blå fokus/hover */
+.navbar-nav .nav-link.active {
+  color: var(--zealand-black);
+}
