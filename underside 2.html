@@ -1,159 +1,106 @@
 <!DOCTYPE html>
 <html lang="da">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nyt liv til iværksætterkulturen</title>
+    <meta charset="utf-8">
 
-    <style>
-        :root {
-            --zealand-yellow: #fff28a;
-            --zealand-black: #1f1f1f;
-            --zealand-gray: #f6f6f6;
-            --zealand-border: #e2e2e2;
-            --font-base: "Inter", Arial, sans-serif;
-        }
+    <title>Sigende titel</title>
 
-        * { box-sizing: border-box; }
+    <meta name="robots" content="All">
+    <meta name="author" content="Udgiver">
+    <meta name="copyright" content="Information om copyright">
 
-        body {
-            margin: 0;
-            font-family: var(--font-base);
-            color: var(--zealand-black);
-            line-height: 1.6;
-        }
+    <!-- Bootstrap CSS -->
+    <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+            rel="stylesheet">
 
-        header {
-            background: var(--zealand-yellow);
-            padding: 1.5rem;
-            border-bottom: 1px solid var(--zealand-border);
-        }
+    <!-- Eget stylesheet -->
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
 
-        nav {
-            margin-top: 0.5rem;
-            display: flex;
-            gap: 1.5rem;
-            flex-wrap: wrap;
-        }
-
-        nav a {
-            text-decoration: none;
-            color: var(--zealand-black);
-            font-weight: 600;
-        }
-
-        main {
-            max-width: 1100px;
-            margin: 0 auto;
-            padding: 2rem 1.5rem;
-            display: flex;
-            flex-direction: column;
-            gap: 2rem;
-        }
-
-        section {
-            background: var(--zealand-gray);
-            padding: 2rem;
-            border-radius: 12px;
-        }
-
-        .cards {
-            display: flex;
-            flex-direction: column;
-            gap: 1.5rem;
-        }
-
-        article {
-            background: #ffffff;
-            border: 1px solid var(--zealand-border);
-            padding: 1.5rem;
-            border-radius: 12px;
-        }
-
-        .highlight {
-            background: #ffffff;
-            border-left: 6px solid var(--zealand-yellow);
-        }
-
-        footer {
-            text-align: center;
-            padding: 2rem;
-            font-size: 0.9rem;
-            border-top: 1px solid var(--zealand-border);
-            color: #555;
-        }
-
-        @media (min-width: 768px) {
-            header {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-            }
-
-            .cards {
-                flex-direction: row;
-            }
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
 
-<header>
-    <h1>Nyt liv til iværksætterkulturen</h1>
-    <nav>
-        <a href="index.html">Forside</a>
-        <a href="partnere.html">Partnere</a>
+<!-- HEADER MED BURGER-MENU -->
+<header class="site-header">
+    <nav class="navbar navbar-expand-md">
+        <div class="container">
+
+            <!-- Titel / Logo -->
+            <a class="navbar-brand fw-bold" href="index.html">
+                Nyt liv til iværksætterkulturen
+            </a>
+
+            <!-- Burger-knap (mobil) -->
+            <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#mainNav"
+                    aria-controls="mainNav"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navigation -->
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Forside</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="partnere.html">Partnere</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
     </nav>
 </header>
 
-<main>
-    <section>
+<main class="page-content">
+    <section class="section">
         <h2>Iværksættermiljøer i Region Sjælland</h2>
         <p>
-            De tre iværksættermiljøer er fysisk forankret på Zealands afdelinger og
-            skaber nye muligheder for unge iværksættere.
+            De tre iværksættermiljøer er fysisk forankret på Zealands afdelinger.
         </p>
     </section>
 
     <section class="cards">
-        <article>
+        <article class="card">
             <h3>Slagelse</h3>
-            <p>
-                En hel etage ombygges til åbent iværksættercenter i regi af
-                <strong>Zealand Connect</strong>.
-            </p>
+            <p>Åbent iværksættercenter i Zealand Connect.</p>
         </article>
 
-        <article>
+        <article class="card">
             <h3>Køge</h3>
-            <p>
-                Digital Innovationslab med fokus på digitale startups, AI og
-                velfærdsteknologi i tæt samarbejde med erhvervslivet.
-            </p>
+            <p>Digital Innovationslab med fokus på AI og digitale startups.</p>
         </article>
 
-        <article>
+        <article class="card">
             <h3>Næstved</h3>
-            <p>
-                Iværksætterhub med fokus på bæredygtighed, design og lokale partnerskaber
-                – blandt andet gennem Torsdagssaloner.
-            </p>
+            <p>Iværksætterhub med Torsdagssaloner og partnerskaber.</p>
         </article>
     </section>
 
-    <section class="highlight">
+    <section class="section section--highlight">
         <h2>Mere end fysiske rammer</h2>
         <p>
-            Miljøerne er dynamiske fællesskaber med coaching, workshops,
-            virksomhedsnetværk og adgang til faglige eksperter.
+            Coaching, workshops og adgang til faglige eksperter.
         </p>
     </section>
 </main>
 
-<footer>
+<footer class="site-footer">
     © 2025 Zealand – Connected Starters
 </footer>
+
+<!-- Bootstrap JS (KRÆVET for burger-menu) -->
+<script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+</script>
 
 </body>
 </html>
